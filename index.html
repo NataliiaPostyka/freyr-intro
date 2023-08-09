@@ -66,6 +66,37 @@
         </li>
       </ul>
     </section>
+
+    <!-- New section for leaving a message -->
+    <section>
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <div style="display: flex; flex-direction: column">
+          <label for="usersName">Name:</label>
+          <input type="text" name="usersName" style="width: 40%" required />
+
+          <label for="usersEmail">Email:</label>
+          <input type="email" name="usersEmail" style="width: 40%" required />
+
+          <label for="usersMessage">Message:</label>
+          <textarea
+            name="usersMessage"
+            style="width: 40%; height: 80px"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- New section for messages -->
+    <section id="messages">
+      <h2>Messages</h2>
+      <!-- Empty unordered list for messages -->
+      <ul></ul>
+    </section>
+
     <footer></footer>
     <script src="js/index.js"></script>
   </body>
